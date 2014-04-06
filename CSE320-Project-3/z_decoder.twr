@@ -1,0 +1,315 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml z_decoder.twx z_decoder.ncd -o z_decoder.twr z_decoder.pcf
+
+Design file:              z_decoder.ncd
+Physical constraint file: z_decoder.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.22 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ins_in<26>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ins_in<6>   |   -0.033(F)|      FAST  |    1.545(F)|      SLOW  |_n0071            |   0.000|
+ins_in<7>   |   -0.127(F)|      FAST  |    1.590(F)|      SLOW  |_n0071            |   0.000|
+ins_in<8>   |   -0.107(F)|      FAST  |    1.612(F)|      SLOW  |_n0071            |   0.000|
+ins_in<9>   |   -0.190(F)|      FAST  |    1.770(F)|      SLOW  |_n0071            |   0.000|
+ins_in<10>  |   -0.355(F)|      FAST  |    1.984(F)|      SLOW  |_n0071            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ins_in<27>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ins_in<6>   |    0.007(F)|      FAST  |    1.452(F)|      SLOW  |_n0071            |   0.000|
+ins_in<7>   |   -0.087(F)|      FAST  |    1.497(F)|      SLOW  |_n0071            |   0.000|
+ins_in<8>   |   -0.067(F)|      FAST  |    1.519(F)|      SLOW  |_n0071            |   0.000|
+ins_in<9>   |   -0.150(F)|      FAST  |    1.677(F)|      SLOW  |_n0071            |   0.000|
+ins_in<10>  |   -0.315(F)|      FAST  |    1.891(F)|      SLOW  |_n0071            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ins_in<28>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ins_in<6>   |   -0.169(F)|      FAST  |    1.486(F)|      SLOW  |_n0071            |   0.000|
+ins_in<7>   |   -0.263(F)|      FAST  |    1.531(F)|      SLOW  |_n0071            |   0.000|
+ins_in<8>   |   -0.243(F)|      FAST  |    1.553(F)|      SLOW  |_n0071            |   0.000|
+ins_in<9>   |   -0.326(F)|      FAST  |    1.711(F)|      SLOW  |_n0071            |   0.000|
+ins_in<10>  |   -0.491(F)|      FAST  |    1.925(F)|      SLOW  |_n0071            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ins_in<29>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ins_in<6>   |    0.178(F)|      FAST  |    1.145(F)|      SLOW  |_n0071            |   0.000|
+ins_in<7>   |    0.084(F)|      FAST  |    1.190(F)|      SLOW  |_n0071            |   0.000|
+ins_in<8>   |    0.104(F)|      FAST  |    1.212(F)|      SLOW  |_n0071            |   0.000|
+ins_in<9>   |    0.021(F)|      FAST  |    1.370(F)|      SLOW  |_n0071            |   0.000|
+ins_in<10>  |   -0.144(F)|      FAST  |    1.584(F)|      SLOW  |_n0071            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ins_in<30>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ins_in<6>   |   -0.057(F)|      FAST  |    1.521(F)|      SLOW  |_n0071            |   0.000|
+ins_in<7>   |   -0.151(F)|      FAST  |    1.566(F)|      SLOW  |_n0071            |   0.000|
+ins_in<8>   |   -0.131(F)|      FAST  |    1.588(F)|      SLOW  |_n0071            |   0.000|
+ins_in<9>   |   -0.214(F)|      FAST  |    1.746(F)|      SLOW  |_n0071            |   0.000|
+ins_in<10>  |   -0.379(F)|      FAST  |    1.960(F)|      SLOW  |_n0071            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ins_in<31>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ins_in<6>   |    0.035(F)|      FAST  |    1.110(F)|      SLOW  |_n0071            |   0.000|
+ins_in<7>   |   -0.059(F)|      FAST  |    1.155(F)|      SLOW  |_n0071            |   0.000|
+ins_in<8>   |   -0.039(F)|      FAST  |    1.177(F)|      SLOW  |_n0071            |   0.000|
+ins_in<9>   |   -0.122(F)|      FAST  |    1.335(F)|      SLOW  |_n0071            |   0.000|
+ins_in<10>  |   -0.287(F)|      FAST  |    1.549(F)|      SLOW  |_n0071            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock ins_in<26> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_sel     |         6.762(F)|      SLOW  |         3.853(F)|      FAST  |_n0063            |   0.000|
+branch      |         6.823(F)|      SLOW  |         3.823(F)|      FAST  |_n0063            |   0.000|
+jump        |         6.724(F)|      SLOW  |         3.817(F)|      FAST  |_n0063            |   0.000|
+mem_to_reg  |         6.724(F)|      SLOW  |         3.817(F)|      FAST  |_n0063            |   0.000|
+mem_write   |         6.624(F)|      SLOW  |         3.741(F)|      FAST  |_n0063            |   0.000|
+reg_dest    |         7.128(F)|      SLOW  |         4.103(F)|      FAST  |_n0063            |   0.000|
+reg_write   |         6.624(F)|      SLOW  |         3.741(F)|      FAST  |_n0063            |   0.000|
+shamt<0>    |         7.508(F)|      SLOW  |         3.986(F)|      FAST  |_n0071            |   0.000|
+shamt<1>    |         7.508(F)|      SLOW  |         3.986(F)|      FAST  |_n0071            |   0.000|
+shamt<2>    |         7.508(F)|      SLOW  |         3.998(F)|      FAST  |_n0071            |   0.000|
+shamt<3>    |         7.781(F)|      SLOW  |         4.186(F)|      FAST  |_n0071            |   0.000|
+shamt<4>    |         7.781(F)|      SLOW  |         4.186(F)|      FAST  |_n0071            |   0.000|
+sign_ext    |         6.823(F)|      SLOW  |         3.823(F)|      FAST  |_n0063            |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock ins_in<27> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_sel     |         7.061(F)|      SLOW  |         4.021(F)|      FAST  |_n0063            |   0.000|
+branch      |         7.122(F)|      SLOW  |         3.991(F)|      FAST  |_n0063            |   0.000|
+jump        |         7.023(F)|      SLOW  |         3.985(F)|      FAST  |_n0063            |   0.000|
+mem_to_reg  |         7.023(F)|      SLOW  |         3.985(F)|      FAST  |_n0063            |   0.000|
+mem_write   |         6.923(F)|      SLOW  |         3.909(F)|      FAST  |_n0063            |   0.000|
+reg_dest    |         7.427(F)|      SLOW  |         4.271(F)|      FAST  |_n0063            |   0.000|
+reg_write   |         6.923(F)|      SLOW  |         3.909(F)|      FAST  |_n0063            |   0.000|
+shamt<0>    |         7.415(F)|      SLOW  |         3.946(F)|      FAST  |_n0071            |   0.000|
+shamt<1>    |         7.415(F)|      SLOW  |         3.946(F)|      FAST  |_n0071            |   0.000|
+shamt<2>    |         7.415(F)|      SLOW  |         3.958(F)|      FAST  |_n0071            |   0.000|
+shamt<3>    |         7.688(F)|      SLOW  |         4.146(F)|      FAST  |_n0071            |   0.000|
+shamt<4>    |         7.688(F)|      SLOW  |         4.146(F)|      FAST  |_n0071            |   0.000|
+sign_ext    |         7.122(F)|      SLOW  |         3.991(F)|      FAST  |_n0063            |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock ins_in<28> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_sel     |         7.095(F)|      SLOW  |         4.058(F)|      FAST  |_n0063            |   0.000|
+branch      |         7.156(F)|      SLOW  |         4.028(F)|      FAST  |_n0063            |   0.000|
+jump        |         7.057(F)|      SLOW  |         4.022(F)|      FAST  |_n0063            |   0.000|
+mem_to_reg  |         7.057(F)|      SLOW  |         4.022(F)|      FAST  |_n0063            |   0.000|
+mem_write   |         6.957(F)|      SLOW  |         3.946(F)|      FAST  |_n0063            |   0.000|
+reg_dest    |         7.461(F)|      SLOW  |         4.308(F)|      FAST  |_n0063            |   0.000|
+reg_write   |         6.957(F)|      SLOW  |         3.946(F)|      FAST  |_n0063            |   0.000|
+shamt<0>    |         7.449(F)|      SLOW  |         4.122(F)|      FAST  |_n0071            |   0.000|
+shamt<1>    |         7.449(F)|      SLOW  |         4.122(F)|      FAST  |_n0071            |   0.000|
+shamt<2>    |         7.449(F)|      SLOW  |         4.134(F)|      FAST  |_n0071            |   0.000|
+shamt<3>    |         7.722(F)|      SLOW  |         4.322(F)|      FAST  |_n0071            |   0.000|
+shamt<4>    |         7.722(F)|      SLOW  |         4.322(F)|      FAST  |_n0071            |   0.000|
+sign_ext    |         7.156(F)|      SLOW  |         4.028(F)|      FAST  |_n0063            |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock ins_in<29> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_sel     |         6.463(F)|      SLOW  |         3.642(F)|      FAST  |_n0063            |   0.000|
+branch      |         6.524(F)|      SLOW  |         3.612(F)|      FAST  |_n0063            |   0.000|
+jump        |         6.425(F)|      SLOW  |         3.606(F)|      FAST  |_n0063            |   0.000|
+mem_to_reg  |         6.425(F)|      SLOW  |         3.606(F)|      FAST  |_n0063            |   0.000|
+mem_write   |         6.325(F)|      SLOW  |         3.530(F)|      FAST  |_n0063            |   0.000|
+reg_dest    |         6.829(F)|      SLOW  |         3.892(F)|      FAST  |_n0063            |   0.000|
+reg_write   |         6.325(F)|      SLOW  |         3.530(F)|      FAST  |_n0063            |   0.000|
+shamt<0>    |         7.108(F)|      SLOW  |         3.775(F)|      FAST  |_n0071            |   0.000|
+shamt<1>    |         7.108(F)|      SLOW  |         3.775(F)|      FAST  |_n0071            |   0.000|
+shamt<2>    |         7.108(F)|      SLOW  |         3.787(F)|      FAST  |_n0071            |   0.000|
+shamt<3>    |         7.381(F)|      SLOW  |         3.975(F)|      FAST  |_n0071            |   0.000|
+shamt<4>    |         7.381(F)|      SLOW  |         3.975(F)|      FAST  |_n0071            |   0.000|
+sign_ext    |         6.524(F)|      SLOW  |         3.612(F)|      FAST  |_n0063            |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock ins_in<30> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_sel     |         6.843(F)|      SLOW  |         3.877(F)|      FAST  |_n0063            |   0.000|
+branch      |         6.904(F)|      SLOW  |         3.847(F)|      FAST  |_n0063            |   0.000|
+jump        |         6.805(F)|      SLOW  |         3.841(F)|      FAST  |_n0063            |   0.000|
+mem_to_reg  |         6.805(F)|      SLOW  |         3.841(F)|      FAST  |_n0063            |   0.000|
+mem_write   |         6.705(F)|      SLOW  |         3.765(F)|      FAST  |_n0063            |   0.000|
+reg_dest    |         7.209(F)|      SLOW  |         4.127(F)|      FAST  |_n0063            |   0.000|
+reg_write   |         6.705(F)|      SLOW  |         3.765(F)|      FAST  |_n0063            |   0.000|
+shamt<0>    |         7.484(F)|      SLOW  |         4.010(F)|      FAST  |_n0071            |   0.000|
+shamt<1>    |         7.484(F)|      SLOW  |         4.010(F)|      FAST  |_n0071            |   0.000|
+shamt<2>    |         7.484(F)|      SLOW  |         4.022(F)|      FAST  |_n0071            |   0.000|
+shamt<3>    |         7.757(F)|      SLOW  |         4.210(F)|      FAST  |_n0071            |   0.000|
+shamt<4>    |         7.757(F)|      SLOW  |         4.210(F)|      FAST  |_n0071            |   0.000|
+sign_ext    |         6.904(F)|      SLOW  |         3.847(F)|      FAST  |_n0063            |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock ins_in<31> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+alu_sel     |         6.695(F)|      SLOW  |         3.794(F)|      FAST  |_n0063            |   0.000|
+branch      |         6.756(F)|      SLOW  |         3.764(F)|      FAST  |_n0063            |   0.000|
+jump        |         6.657(F)|      SLOW  |         3.758(F)|      FAST  |_n0063            |   0.000|
+mem_to_reg  |         6.657(F)|      SLOW  |         3.758(F)|      FAST  |_n0063            |   0.000|
+mem_write   |         6.557(F)|      SLOW  |         3.682(F)|      FAST  |_n0063            |   0.000|
+reg_dest    |         7.061(F)|      SLOW  |         4.044(F)|      FAST  |_n0063            |   0.000|
+reg_write   |         6.557(F)|      SLOW  |         3.682(F)|      FAST  |_n0063            |   0.000|
+shamt<0>    |         7.073(F)|      SLOW  |         3.918(F)|      FAST  |_n0071            |   0.000|
+shamt<1>    |         7.073(F)|      SLOW  |         3.918(F)|      FAST  |_n0071            |   0.000|
+shamt<2>    |         7.073(F)|      SLOW  |         3.930(F)|      FAST  |_n0071            |   0.000|
+shamt<3>    |         7.346(F)|      SLOW  |         4.118(F)|      FAST  |_n0071            |   0.000|
+shamt<4>    |         7.346(F)|      SLOW  |         4.118(F)|      FAST  |_n0071            |   0.000|
+sign_ext    |         6.756(F)|      SLOW  |         3.764(F)|      FAST  |_n0063            |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock ins_in<26>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ins_in<26>     |         |         |    1.427|    1.427|
+ins_in<27>     |         |         |    1.110|    1.110|
+ins_in<28>     |         |         |    1.613|    1.613|
+ins_in<29>     |         |         |    1.027|    1.027|
+ins_in<30>     |         |         |    1.403|    1.403|
+ins_in<31>     |         |         |    0.992|    0.992|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ins_in<27>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ins_in<26>     |         |         |    1.150|    1.150|
+ins_in<27>     |         |         |    0.833|    0.833|
+ins_in<28>     |         |         |    1.336|    1.336|
+ins_in<29>     |         |         |    0.876|    0.876|
+ins_in<30>     |         |         |    1.126|    1.126|
+ins_in<31>     |         |         |    0.715|    0.715|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ins_in<28>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ins_in<26>     |         |         |    1.115|    1.115|
+ins_in<27>     |         |         |    0.798|    0.798|
+ins_in<28>     |         |         |    1.301|    1.301|
+ins_in<29>     |         |         |    0.715|    0.715|
+ins_in<30>     |         |         |    1.091|    1.091|
+ins_in<31>     |         |         |    0.680|    0.680|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ins_in<29>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ins_in<26>     |         |         |    1.713|    1.713|
+ins_in<27>     |         |         |    1.396|    1.396|
+ins_in<28>     |         |         |    1.899|    1.899|
+ins_in<29>     |         |         |    1.313|    1.313|
+ins_in<30>     |         |         |    1.689|    1.689|
+ins_in<31>     |         |         |    1.278|    1.278|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ins_in<30>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ins_in<26>     |         |         |    1.355|    1.355|
+ins_in<27>     |         |         |    1.038|    1.038|
+ins_in<28>     |         |         |    1.541|    1.541|
+ins_in<29>     |         |         |    0.955|    0.955|
+ins_in<30>     |         |         |    1.331|    1.331|
+ins_in<31>     |         |         |    0.920|    0.920|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ins_in<31>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ins_in<26>     |         |         |    1.495|    1.495|
+ins_in<27>     |         |         |    1.178|    1.178|
+ins_in<28>     |         |         |    1.681|    1.681|
+ins_in<29>     |         |         |    1.095|    1.095|
+ins_in<30>     |         |         |    1.471|    1.471|
+ins_in<31>     |         |         |    1.060|    1.060|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Apr 06 01:36:24 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 238 MB
+
+
+

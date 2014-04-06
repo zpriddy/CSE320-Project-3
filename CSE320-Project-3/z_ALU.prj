@@ -1,0 +1,6 @@
+verilog work "z_2_1_mux.v"
+verilog work "a_full_adder.v"
+verilog work "z_csa_stage.v"
+verilog work "z_m_sca_stage.v"
+verilog work "z_n_csa.v"
+verilog work "z_ALU.v"

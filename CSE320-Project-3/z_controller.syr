@@ -1,0 +1,154 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: z_controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "z_controller.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "z_controller"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : z_controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_2_1_mux.v" into library work
+Parsing module <z_2_1_mux>.
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\a_full_adder.v" into library work
+Parsing module <a_full_adder>.
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_csa_stage.v" into library work
+Parsing module <z_csa_stage>.
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_m_sca_stage.v" into library work
+Parsing module <z_m_sca_stage>.
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_n_csa.v" into library work
+Parsing module <z_n_csa>.
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_pc.v" into library work
+Parsing module <z_pc>.
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_decoder.v" into library work
+Parsing module <z_decoder>.
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_ALU.v" into library work
+Parsing module <z_ALU>.
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_controller.v" into library work
+Parsing module <z_controller>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <z_controller>.
+
+Elaborating module <z_decoder>.
+WARNING:HDLCompiler:189 - "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_controller.v" Line 34: Size mismatch in connection of port <shamt>. Formal port size is 6-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:413 - "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_controller.v" Line 37: Result of 272-bit expression is truncated to fit in 32-bit target.
+
+Elaborating module <z_ALU>.
+
+Elaborating module <z_n_csa>.
+ERROR:HDLCompiler:1706 - "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_n_csa.v" Line 41: Defparam contains array instance reference
+Module z_n_csa remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_n_csa.v" Line 21: Empty module <z_n_csa> remains a black box.
+WARNING:HDLCompiler:1127 - "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_ALU.v" Line 48: Assignment to rs ignored, since the identifier is never used
+
+Elaborating module <z_pc>.
+WARNING:HDLCompiler:634 - "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_pc.v" Line 30: Net <jump_add[1]> does not have a driver.
+--> 
+
+Total memory usage is 180512 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

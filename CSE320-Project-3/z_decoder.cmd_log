@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/CSE320-Project-3/CSE320-Project-3/z_decoder.xst" -ofn "C:/Users/Zachary/Documents/GitHub/CSE320-Project-3/CSE320-Project-3/z_decoder.syr" 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/CSE320-Project-3/CSE320-Project-3/z_decoder.xst" -ofn "C:/Users/Zachary/Documents/GitHub/CSE320-Project-3/CSE320-Project-3/z_decoder.syr" 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/CSE320-Project-3/CSE320-Project-3/z_decoder.xst" -ofn "C:/Users/Zachary/Documents/GitHub/CSE320-Project-3/CSE320-Project-3/z_decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 z_decoder.ngc z_decoder.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o z_decoder_map.ncd z_decoder.ngd z_decoder.pcf 
+par -w -intstyle ise -ol high -mt off z_decoder_map.ncd z_decoder.ncd z_decoder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml z_decoder.twx z_decoder.ncd -o z_decoder.twr z_decoder.pcf 

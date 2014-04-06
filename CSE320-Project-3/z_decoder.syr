@@ -1,0 +1,381 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: z_decoder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "z_decoder.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "z_decoder"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : z_decoder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_decoder.v" into library work
+Parsing module <z_decoder>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <z_decoder>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <z_decoder>.
+    Related source file is "C:\Users\Zachary\Documents\GitHub\CSE320-Project-3\CSE320-Project-3\z_decoder.v".
+WARNING:Xst:647 - Input <ins_in<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ins_in<25:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_dest>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sign_ext>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <jump>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_write>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_to_reg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shamt<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shamt<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shamt<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shamt<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shamt<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shamt<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_write>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  13 Latch(s).
+Unit <z_decoder> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 13
+ 1-bit latch                                           : 13
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <shamt_5> (without init value) has a constant value of 0 in block <z_decoder>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <shamt_5> (without init value) has a constant value of 0 in block <z_decoder>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <z_decoder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block z_decoder, actual ratio is 0.
+Latch sign_ext has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : z_decoder.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 16
+#      GND                         : 1
+#      LUT2                        : 7
+#      LUT5                        : 1
+#      LUT6                        : 7
+# FlipFlops/Latches                : 13
+#      LD                          : 13
+# IO Buffers                       : 25
+#      IBUF                        : 11
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   15  out of   9112     0%  
+    Number used as Logic:                15  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     15
+   Number with an unused Flip Flop:      15  out of     15   100%  
+   Number with an unused LUT:             0  out of     15     0%  
+   Number of fully used LUT-FF pairs:     0  out of     15     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          46
+ Number of bonded IOBs:                  25  out of    232    10%  
+    IOB Flip Flops/Latches:              13
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+_n0071(_n00711:O)                  | NONE(*)(shamt_4)       | 5     |
+_n0063(out3:O)                     | NONE(*)(mem_write)     | 8     |
+-----------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.558ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0071'
+  Total number of paths / destination ports: 35 / 5
+-------------------------------------------------------------------------
+Offset:              3.558ns (Levels of Logic = 3)
+  Source:            ins_in<28> (PAD)
+  Destination:       shamt_4 (LATCH)
+  Destination Clock: _n0071 falling
+
+  Data Path: ins_in<28> to shamt_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   1.147  ins_in_28_IBUF (ins_in_28_IBUF)
+     LUT6:I1->O            6   0.203   0.745  ins_in[31]_PWR_1_o_Select_28_o<31>1 (ins_in[31]_PWR_1_o_Select_28_o)
+     LUT2:I1->O            1   0.205   0.000  ins_in[31]_ins_in[10]_Select_42_o<10>1 (ins_in[31]_ins_in[10]_Select_42_o)
+     LD:D                      0.037          shamt_4
+    ----------------------------------------
+    Total                      3.558ns (1.667ns logic, 1.891ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0063'
+  Total number of paths / destination ports: 52 / 8
+-------------------------------------------------------------------------
+Offset:              3.465ns (Levels of Logic = 3)
+  Source:            ins_in<29> (PAD)
+  Destination:       reg_write (LATCH)
+  Destination Clock: _n0063 falling
+
+  Data Path: ins_in<29> to reg_write
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   1.147  ins_in_29_IBUF (ins_in_29_IBUF)
+     LUT6:I1->O            3   0.203   0.651  out241 (out24)
+     LUT6:I5->O            1   0.205   0.000  out2 (ins_in[31]_PWR_1_o_Select_36_o)
+     LD:D                      0.037          reg_write
+    ----------------------------------------
+    Total                      3.465ns (1.667ns logic, 1.798ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n0071'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            shamt_4 (LATCH)
+  Destination:       shamt<4> (PAD)
+  Source Clock:      _n0071 falling
+
+  Data Path: shamt_4 to shamt<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  shamt_4 (shamt_4)
+     OBUF:I->O                 2.571          shamt_4_OBUF (shamt<4>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n0063'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            jump (LATCH)
+  Destination:       jump (PAD)
+  Source Clock:      _n0063 falling
+
+  Data Path: jump to jump
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  jump (jump_OBUF)
+     OBUF:I->O                 2.571          jump_OBUF (jump)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.19 secs
+ 
+--> 
+
+Total memory usage is 217408 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
