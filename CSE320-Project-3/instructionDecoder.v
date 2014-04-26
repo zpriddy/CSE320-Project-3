@@ -58,7 +58,7 @@ module instructionDecoder(ins_in,jump,branch,mem_to_reg,sign_ext,reg_dest,mem_wr
 			6'b001X0X:begin //addiu & andi
 				alu_src = 1; //IMM value
 				reg_dest = 0; //NO RD
-				sign_ext = 0; //NO OVERFLOW
+				sign_ext = 1; //NO OVERFLOW
 				branch = 0; // NO BRANCH
 				jump = 0; // Jump inactivated
 				reg_write = 1; //WRITING TO REG 
@@ -80,7 +80,7 @@ module instructionDecoder(ins_in,jump,branch,mem_to_reg,sign_ext,reg_dest,mem_wr
 			6'b100011:begin // lw 	
 				alu_src = 1; //IMM IS SOURCE FOR ALU
 				reg_dest = 0; //NO RD
-				sign_ext = 0; //NO OVERFLOW
+				sign_ext = 1; //NO OVERFLOW
 				branch = 0; // NO BRANCH
 				jump = 0; // Jump inactivated
 				reg_write = 1; //WRITING TO REG 
@@ -91,7 +91,7 @@ module instructionDecoder(ins_in,jump,branch,mem_to_reg,sign_ext,reg_dest,mem_wr
 			6'b101011:begin // sw 	
 				alu_src = 1; //IMM IS SOURCE FOR ALU
 				reg_dest = 0; //NO RD
-				sign_ext = 0; //NO OVERFLOW
+				sign_ext = 1; //NO OVERFLOW
 				branch = 0; // NO BRANCH
 				jump = 0; // Jump inactivated
 				reg_write = 0; //WRITING TO REG 

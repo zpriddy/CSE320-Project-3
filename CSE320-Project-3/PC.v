@@ -33,7 +33,7 @@ module PC(PC, instr, Zero, Branch, Jump, nextPC);
 	  wire [31:00] pcInc, Branch1, branchAdd, jumpAdd, mux1; // internal wires
 	  wire select1;
 
-	  assign Jump_target = {2'b00,instr[25:00]}; // Sign extended jump target
+	  assign Jump_target = {instr[25:00],2'b00}; // Sign extended jump target
 	  assign select1 = Branch & Zero; // the condition for the first mux (to branch or not)
 	  assign pcInc = PC + 32'h00000004; // pcInc = PC+4
 	  assign jumpAdd = ((pcInc & 32'hf0000000)|Jump_target<<2); // nextPC after jumping
