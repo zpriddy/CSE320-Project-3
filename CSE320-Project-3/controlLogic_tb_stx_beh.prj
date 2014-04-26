@@ -1,0 +1,6 @@
+verilog isim_temp "PC.v"
+verilog isim_temp "instructionDecoder.v"
+verilog isim_temp "ALU.v"
+verilog isim_temp "controlLogic.v"
+verilog isim_temp "controlLogic_tb.v"
+verilog isim_temp "C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v"

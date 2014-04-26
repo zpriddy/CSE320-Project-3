@@ -1,0 +1,6 @@
+verilog work "PC.v"
+verilog work "instructionDecoder.v"
+verilog work "ALU.v"
+verilog work "controlLogic.v"
+verilog work "controlLogic_tb.v"
+verilog work "C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v"

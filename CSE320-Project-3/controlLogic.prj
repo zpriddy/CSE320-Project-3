@@ -1,0 +1,4 @@
+verilog work "PC.v"
+verilog work "instructionDecoder.v"
+verilog work "ALU.v"
+verilog work "controlLogic.v"
